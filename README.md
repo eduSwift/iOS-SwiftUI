@@ -48,3 +48,17 @@ Provides random answers to the user's questions
 Demonstrates SwiftUI state management and animation
 
 ########################  ############################################
+
+
+Xylophone
+Xylophone is an interactive app that allows users to play musical notes by tapping on different colored bars, simulating a xylophone.
+
+Features:
+
+Displays a colorful xylophone interface
+Plays different musical notes when the bars are tapped
+Demonstrates audio playback and touch interactions in SwiftUI
+
+########################  ############################################
+
+
