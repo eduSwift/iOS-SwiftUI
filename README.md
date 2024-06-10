@@ -37,3 +37,28 @@ Randomizes the dice faces when a button is pressed
 Demonstrates SwiftUI state management and random number generation
 
 ########################  ############################################
+
+Magic 8 Ball
+Magic 8 Ball is a whimsical app that answers the user's questions in a manner similar to the classic Magic 8 Ball toy. The user shakes the device or taps a button to receive a random answer.
+
+Features:
+
+Displays a Magic 8 Ball image
+Provides random answers to the user's questions
+Demonstrates SwiftUI state management and animation
+
+########################  ############################################
+
+
+Xylophone
+Xylophone is an interactive app that allows users to play musical notes by tapping on different colored bars, simulating a xylophone.
+
+Features:
+
+Displays a colorful xylophone interface
+Plays different musical notes when the bars are tapped
+Demonstrates audio playback and touch interactions in SwiftUI
+
+########################  ############################################
+
+
