@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Dicee-iOS13.xcodeproj">
+      location = "self:/Users/eduardorodrigues/iOS-SwiftUI/Dicee/Dicee.xcodeproj">
    </FileRef>
 </Workspace>
