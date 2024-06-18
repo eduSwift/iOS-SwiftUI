@@ -81,6 +81,18 @@ Tracks the user's score based on correct answers
 
 ################################ ################################
 
+Destini
+Destini is an interactive storytelling app that allows users to choose their own adventure through a series of branching narrative choices.
+
+Features:
+
+Displays a story with multiple paths
+Allows users to make choices that affect the story's outcome
+Tracks the progress and branches of the story
+Demonstrates SwiftUI state management and complex navigation
+
+################################ ################################
+
 
 Provides feedback on correct and incorrect answers
 Demonstrates SwiftUI state management and data handling
