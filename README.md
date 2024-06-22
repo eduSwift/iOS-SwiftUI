@@ -115,4 +115,15 @@ Demonstrates form handling, data validation, and health-related calculations in 
 
 ################################ ################################
 
-Demonstrates SwiftUI state management and data handling
+Clima
+Clima is a weather app that provides current weather information for any city.
+
+Features:
+
+Fetches real-time weather data from an API
+Displays current temperature, weather conditions, and city name
+Allows users to search for weather information by city
+Demonstrates network requests, JSON parsing, and dynamic UI updates in SwiftUI
+
+################################ ################################
+
