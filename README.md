@@ -5,6 +5,7 @@ Welcome to my GitHub repository showcasing a collection of my iOS SwiftUI app pr
 Projects
 
 I Am Rich
+
 I Am Rich is a simple app that displays a diamond image and a label saying "I Am Rich." This app is inspired by the infamous "I Am Rich" app that was briefly available on the App Store.
 
 Features:
@@ -16,6 +17,7 @@ Demonstrates basic SwiftUI layout and image handling
 ################################ ################################
 
 I Am Poor
+
 I Am Poor is a playful counterpoint to the "I Am Rich" app. It displays a coal image and a label saying "I Am Poor."
 
 Features:
@@ -27,6 +29,7 @@ Demonstrates basic SwiftUI layout and image handling
 ################################ ################################
 
 Dicee
+
 Dicee is a fun app that simulates rolling two dice. It generates random results when the user taps a button.
 
 Features:
@@ -38,6 +41,7 @@ Demonstrates SwiftUI state management and random number generation
 ################################ ################################
 
 Magic 8 Ball
+
 Magic 8 Ball is a whimsical app that answers the user's questions in a manner similar to the classic Magic 8 Ball toy. The user shakes the device or taps a button to receive a random answer.
 
 Features:
@@ -49,6 +53,7 @@ Demonstrates SwiftUI state management and animation
 ################################ ################################
 
 Xylophone
+
 Xylophone is an interactive app that allows users to play musical notes by tapping on different colored bars, simulating a xylophone.
 
 Features:
@@ -60,6 +65,7 @@ Demonstrates audio playback and touch interactions in SwiftUI
 ################################ ################################
 
 Egg Timer
+
 Egg Timer is a practical app that helps you boil eggs to your preferred level of doneness. Set the timer based on the desired doneness, and the app will alert you when your eggs are ready.
 
 Features:
@@ -72,6 +78,7 @@ Demonstrates the use of SwiftUI timers and notifications
 ################################ ################################
 
 Quizzler
+
 Quizzler is an engaging quiz app that tests the user's knowledge on various topics.
 
 Features:
@@ -82,6 +89,7 @@ Tracks the user's score based on correct answers
 ################################ ################################
 
 Destini
+
 Destini is an interactive storytelling app that allows users to choose their own adventure through a series of branching narrative choices.
 
 Features:
@@ -93,6 +101,30 @@ Demonstrates SwiftUI state management and complex navigation
 
 ################################ ################################
 
+BMI Calculator
 
-Provides feedback on correct and incorrect answers
-Demonstrates SwiftUI state management and data handling
+BMI Calculator is a health-focused app that helps users calculate their Body Mass Index (BMI) based on their height and weight.
+
+Features:
+
+Simple and intuitive interface for inputting height and weight
+Calculates and displays the user's BMI
+Provides information on BMI categories (e.g., underweight, normal, overweight, obese)
+Demonstrates form handling, data validation, and health-related calculations in SwiftUI
+
+
+################################ ################################
+
+Clima
+
+Clima is a weather app that provides current weather information for any city.
+
+Features:
+
+Fetches real-time weather data from an API
+Displays current temperature, weather conditions, and city name
+Allows users to search for weather information by city
+Demonstrates network requests, JSON parsing, and dynamic UI updates in SwiftUI
+
+################################ ################################
+
