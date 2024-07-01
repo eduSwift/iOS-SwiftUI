@@ -19,7 +19,7 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-jk-pgH">
                                 <rect key="frame" x="0.0" y="646" width="414" height="216"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="S7z-Rh-fJa"/>
+                                    <constraint firstAttribute="height" constant="216" id="z8X-mr-9gq"/>
                                 </constraints>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="WWW-oe-lHd">
@@ -86,15 +86,20 @@
                         </subviews>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="ct2-jk-pgH" firstAttribute="trailing" secondItem="CjI-yV-vnC" secondAttribute="trailing" id="0NU-ng-zoE"/>
+                            <constraint firstItem="ct2-jk-pgH" firstAttribute="bottom" secondItem="CjI-yV-vnC" secondAttribute="bottom" id="2bo-2l-OgK"/>
                             <constraint firstItem="WWW-oe-lHd" firstAttribute="top" secondItem="CjI-yV-vnC" secondAttribute="top" constant="10" id="6gh-lx-Pg8"/>
+                            <constraint firstItem="ct2-jk-pgH" firstAttribute="leading" secondItem="CjI-yV-vnC" secondAttribute="leading" id="6hC-bm-Lcw"/>
+                            <constraint firstItem="ct2-jk-pgH" firstAttribute="trailing" secondItem="CjI-yV-vnC" secondAttribute="trailing" id="BVi-uT-zdm"/>
                             <constraint firstItem="WWW-oe-lHd" firstAttribute="leading" secondItem="CjI-yV-vnC" secondAttribute="leading" id="DHX-HO-65x"/>
                             <constraint firstItem="CjI-yV-vnC" firstAttribute="trailing" secondItem="WWW-oe-lHd" secondAttribute="trailing" id="OZU-yE-hqJ"/>
-                            <constraint firstItem="ct2-jk-pgH" firstAttribute="leading" secondItem="CjI-yV-vnC" secondAttribute="leading" id="myB-1G-FSo"/>
-                            <constraint firstItem="ct2-jk-pgH" firstAttribute="bottom" secondItem="CjI-yV-vnC" secondAttribute="bottom" id="tCZ-GN-qxe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CjI-yV-vnC"/>
                     </view>
+                    <connections>
+                        <outlet property="bitcoinLabel" destination="N2a-Ax-iRV" id="RwQ-mm-fon"/>
+                        <outlet property="currencyLabel" destination="MAn-y0-nXv" id="1wj-LT-l86"/>
+                        <outlet property="currencyPicker" destination="ct2-jk-pgH" id="UFt-IO-e4K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
