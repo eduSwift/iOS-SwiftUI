@@ -129,6 +129,7 @@ Demonstrates network requests, JSON parsing, and dynamic UI updates in SwiftUI
 ################################ ################################
 
 ByteCoin
+
 ByteCoin is a cryptocurrency price tracker that allows users to monitor the current exchange rate of Bitcoin and other cryptocurrencies.
 
 Features:
