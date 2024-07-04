@@ -40,6 +40,7 @@ Demonstrates SwiftUI state management and random number generation
 
 ################################ ################################
 
+
 Magic 8 Ball
 
 Magic 8 Ball is a whimsical app that answers the user's questions in a manner similar to the classic Magic 8 Ball toy. The user shakes the device or taps a button to receive a random answer.
@@ -128,3 +129,31 @@ Demonstrates network requests, JSON parsing, and dynamic UI updates in SwiftUI
 
 ################################ ################################
 
+ByteCoin
+
+ByteCoin is a cryptocurrency price tracker that allows users to monitor the current exchange rate of Bitcoin and other cryptocurrencies.
+
+Features:
+
+Fetches real-time cryptocurrency data from an API
+Displays current exchange rates for Bitcoin and other major cryptocurrencies
+Allows users to select different fiat currencies for conversion
+Demonstrates network requests, JSON parsing, and dynamic UI updates in SwiftUI
+
+
+################################ ################################
+
+
+Flash Chat
+
+Flash Chat is a real-time chat application that allows users to send and receive messages instantly.
+
+Features:
+
+Implements user authentication (sign up and login) using Firebase
+Real-time message sending and receiving using Firestore
+Displays a chat interface with message bubbles
+Demonstrates user authentication, real-time database integration, and dynamic UI updates in SwiftUI
+
+
+################################ ################################
