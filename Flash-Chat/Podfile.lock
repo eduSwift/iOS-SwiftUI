@@ -967,6 +967,11 @@ PODS:
   - FBSDKCoreKit_Basics (16.3.1)
   - FBSDKLoginKit (16.3.1):
     - FBSDKCoreKit (= 16.3.1)
+  - Firebase/CoreOnly (10.28.1):
+    - FirebaseCore (= 10.28.1)
+  - Firebase/Firestore (10.28.1):
+    - Firebase/CoreOnly
+    - FirebaseFirestore (~> 10.28.0)
   - FirebaseAnonymousAuthUI (14.0.0):
     - FirebaseAuth (< 12.0, >= 8.0)
     - FirebaseAuthUI
@@ -1196,6 +1201,7 @@ PODS:
     - AppAuth/Core (~> 1.6)
     - GTMSessionFetcher/Core (< 3.0, >= 1.5)
   - GTMSessionFetcher/Core (2.3.0)
+  - IQKeyboardManager (6.5.19)
   - leveldb-library (1.22.5)
   - nanopb (2.30910.0):
     - nanopb/decode (= 2.30910.0)
@@ -1210,7 +1216,9 @@ PODS:
 
 DEPENDENCIES:
   - CLTypingLabel (~> 0.4.0)
+  - Firebase/Firestore
   - FirebaseUI
+  - IQKeyboardManager
 
 SPEC REPOS:
   trunk:
@@ -1222,6 +1230,7 @@ SPEC REPOS:
     - FBSDKCoreKit
     - FBSDKCoreKit_Basics
     - FBSDKLoginKit
+    - Firebase
     - FirebaseAnonymousAuthUI
     - FirebaseAppCheckInterop
     - FirebaseAuth
@@ -1250,6 +1259,7 @@ SPEC REPOS:
     - gRPC-Core
     - GTMAppAuth
     - GTMSessionFetcher
+    - IQKeyboardManager
     - leveldb-library
     - nanopb
     - PromisesObjC
@@ -1265,6 +1275,7 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 5e4dd478947ab1bcc887e8cfadeae0727af1a942
   FBSDKCoreKit_Basics: cd7b5f5d1e8868c26706917919d058999ca672c3
   FBSDKLoginKit: 572cca0bc6c90067ef197187697cb3b584310c52
+  Firebase: 49e62242b3ae422a002ab647a7e62a332a8c3ec1
   FirebaseAnonymousAuthUI: a4b56a1f5da14bcbd8c159488aef09889863b98f
   FirebaseAppCheckInterop: 5315f40293191bfec04b2cfab0215760e441540a
   FirebaseAuth: 3d872fbbfc4223edeb72769e488f325fa8b0a4a9
@@ -1293,12 +1304,13 @@ SPEC CHECKSUMS:
   gRPC-Core: eee4be35df218649fe66d721a05a7f27a28f069b
   GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd
   GTMSessionFetcher: 3a63d75eecd6aa32c2fc79f578064e1214dfdec2
+  IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
   leveldb-library: e8eadf9008a61f9e1dde3978c086d2b6d9b9dc28
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
   SDWebImage: 066c47b573f408f18caa467d71deace7c0f8280d
 
-PODFILE CHECKSUM: 32d448575a196e5f756627f459f4bc9022a61596
+PODFILE CHECKSUM: 1e9a093f94c85a915394dfe3ca4060223761eda6
 
 COCOAPODS: 1.15.2
