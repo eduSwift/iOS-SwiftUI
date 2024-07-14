@@ -157,3 +157,41 @@ Demonstrates user authentication, real-time database integration, and dynamic UI
 
 
 ################################ ################################
+
+H4X0R News
+
+H4X0R News is a news reader app that fetches and displays the latest news articles from the Hacker News API.
+
+Features:
+
+Fetches real-time news data from the Hacker News API
+Displays a list of news articles with titles and URLs
+Allows users to tap on a news article to open the URL in a web view
+Demonstrates network requests, JSON parsing, and dynamic UI updates in SwiftUI
+
+################################ ################################
+
+My Business Card
+
+My Business Card is a simple app that displays a digital business card with contact information and social media links.
+
+Features:
+
+Displays a digital business card with a profile image, name, job title, and contact information
+Includes tappable links to social media profiles
+Demonstrates basic SwiftUI layout and interactivity
+
+################################ ################################
+
+Todoey
+
+Todoey is a task management app that helps users keep track of their to-do lists.
+
+Features:
+
+Allows users to create, read, update, and delete tasks
+Displays a list of tasks with checkboxes to mark them as completed
+Stores tasks persistently using Core Data or a similar persistence framework
+Demonstrates CRUD operations, state management, and persistent storage in SwiftUI
+
+################################ ################################
