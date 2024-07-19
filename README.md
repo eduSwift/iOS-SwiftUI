@@ -102,6 +102,21 @@ Demonstrates SwiftUI state management and complex navigation
 
 ################################ ################################
 
+Tipsy
+
+
+Tipsy is a tip calculator app that helps users calculate the tip amount and split the bill among multiple people.
+
+Features:
+
+Simple and intuitive interface for inputting bill amount, tip percentage, and number of people
+Calculates and displays the tip amount per person and the total amount per person
+Demonstrates form handling, data validation, and financial calculations in SwiftUI
+
+
+################################ ################################
+
+
 BMI Calculator
 
 BMI Calculator is a health-focused app that helps users calculate their Body Mass Index (BMI) based on their height and weight.
