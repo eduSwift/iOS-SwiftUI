@@ -131,6 +131,19 @@ Demonstrates form handling, data validation, and health-related calculations in 
 
 ################################ ################################
 
+I Am Rich 2.0
+
+I Am Rich 2.0 is an upgraded version of the classic "I Am Rich" app with enhanced features.
+
+Features:
+
+Displays a high-quality diamond image
+Shows a label with the text "I Am Rich"
+Includes additional luxury items and quotes
+Demonstrates advanced SwiftUI layout, animations, and image handling
+
+################################ ################################
+
 Clima
 
 Clima is a weather app that provides current weather information for any city.
