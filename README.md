@@ -144,6 +144,19 @@ Demonstrates advanced SwiftUI layout, animations, and image handling
 
 ################################ ################################
 
+Eduardo Card
+
+Eduardo Card is a digital business card app that allows users to create and share their contact information in a modern, interactive format.
+
+Features:
+
+Displays a digital business card with a profile image, name, job title, and contact information
+Includes tappable links to social media profiles and other contact methods
+Customizable design and layout options
+Demonstrates advanced SwiftUI layout, interactivity, and customization
+
+################################ ################################
+
 Clima
 
 Clima is a weather app that provides current weather information for any city.
