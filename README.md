@@ -102,6 +102,21 @@ Demonstrates SwiftUI state management and complex navigation
 
 ################################ ################################
 
+Tipsy
+
+
+Tipsy is a tip calculator app that helps users calculate the tip amount and split the bill among multiple people.
+
+Features:
+
+Simple and intuitive interface for inputting bill amount, tip percentage, and number of people
+Calculates and displays the tip amount per person and the total amount per person
+Demonstrates form handling, data validation, and financial calculations in SwiftUI
+
+
+################################ ################################
+
+
 BMI Calculator
 
 BMI Calculator is a health-focused app that helps users calculate their Body Mass Index (BMI) based on their height and weight.
@@ -113,6 +128,32 @@ Calculates and displays the user's BMI
 Provides information on BMI categories (e.g., underweight, normal, overweight, obese)
 Demonstrates form handling, data validation, and health-related calculations in SwiftUI
 
+
+################################ ################################
+
+I Am Rich 2.0
+
+I Am Rich 2.0 is an upgraded version of the classic "I Am Rich" app with enhanced features.
+
+Features:
+
+Displays a high-quality diamond image
+Shows a label with the text "I Am Rich"
+Includes additional luxury items and quotes
+Demonstrates advanced SwiftUI layout, animations, and image handling
+
+################################ ################################
+
+Eduardo Card
+
+Eduardo Card is a digital business card app that allows users to create and share their contact information in a modern, interactive format.
+
+Features:
+
+Displays a digital business card with a profile image, name, job title, and contact information
+Includes tappable links to social media profiles and other contact methods
+Customizable design and layout options
+Demonstrates advanced SwiftUI layout, interactivity, and customization
 
 ################################ ################################
 
