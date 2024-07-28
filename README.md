@@ -199,6 +199,7 @@ Demonstrates user authentication, real-time database integration, and dynamic UI
 
 ################################ ################################
 
+
 H4X0R News
 
 H4X0R News is a news reader app that fetches and displays the latest news articles from the Hacker News API.
@@ -230,10 +231,8 @@ Todoey is a task management app that helps users keep track of their to-do lists
 
 Features:
 
-Allows users to create, read, update, and delete tasks
-Displays a list of tasks with checkboxes to mark them as completed
-Stores tasks persistently using Core Data or a similar persistence framework
-Demonstrates CRUD operations, state management, and persistent storage in SwiftUI
+Allows users to create, read, update, and delete tasks Displays a list of tasks with checkboxes to mark them as completed Stores tasks persistently using Core Data or a similar persistence framework Demonstrates CRUD operations, state management, and persistent storage in SwiftUI
 
 ################################ ################################
+
 
