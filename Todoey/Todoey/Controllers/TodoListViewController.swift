@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TodoListViewController: UITableViewController {
+class TodoListViewController: UITableViewController, UISearchBarDelegate {
     
     
     var itemArray = [Item] ()
@@ -22,6 +22,8 @@ class TodoListViewController: UITableViewController {
         super.viewDidLoad()
         
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        
+
         
         loadItems()
         
@@ -50,11 +52,11 @@ class TodoListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        //context.delete(itemArray[indexPath.row])
+        //itemArray.remove(at: indexPath.row)
         
-        itemArray.remove(at: indexPath.row)
-        context.delete(itemArray[indexPath.row])
         
-        //itemArray[indexPath.row].done = !itemArray[indexPath.row].done
+        itemArray[indexPath.row].done = !itemArray[indexPath.row].done
         
         saveItems()
         
@@ -109,13 +111,15 @@ class TodoListViewController: UITableViewController {
     func loadItems() {
         let request : NSFetchRequest<Item> = Item.fetchRequest()
         do {
-           itemArray = try context.fetch(request)
+            itemArray = try context.fetch(request)
         } catch {
             print("Error fetcing data from context \(error)")
         }
-        
+        self.tableView.reloadData()
     }
     
-    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        <#code#>
+    }
 }
 
