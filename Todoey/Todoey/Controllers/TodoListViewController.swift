@@ -23,7 +23,7 @@ class TodoListViewController: UITableViewController, UISearchBarDelegate {
         
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         
-
+        
         
         loadItems()
         
@@ -119,7 +119,24 @@ class TodoListViewController: UITableViewController, UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        <#code#>
+        let request : NSFetchRequest<Item> = Item.fetchRequest()
+        
+        let predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+        
+        request.predicate = predicate
+        
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        
+        request.sortDescriptors = [sortDescriptor]
+        
+        
+        do {
+            try context.save()
+        } catch {
+            print("Error saving context \(error)")
+            
+        }
+        tableView.reloadData()
     }
+    
 }
-
