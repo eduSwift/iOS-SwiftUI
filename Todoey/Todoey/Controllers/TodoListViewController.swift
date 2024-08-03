@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TodoListViewController: UITableViewController, UISearchBarDelegate {
+class TodoListViewController: UITableViewController {
     
     
     var itemArray = [Item] ()
@@ -23,12 +23,12 @@ class TodoListViewController: UITableViewController, UISearchBarDelegate {
         
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         
-        
-        
         loadItems()
         
         
     }
+    
+    //MARK: - Tableview Datasoruce Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArray.count
@@ -108,35 +108,44 @@ class TodoListViewController: UITableViewController, UISearchBarDelegate {
         self.tableView.reloadData()
     }
     
-    func loadItems() {
-        let request : NSFetchRequest<Item> = Item.fetchRequest()
+    func loadItems(with request:NSFetchRequest<Item> = Item.fetchRequest()) {
+        
         do {
             itemArray = try context.fetch(request)
         } catch {
-            print("Error fetcing data from context \(error)")
+            print("Error fetching data from context \(error)")
         }
-        self.tableView.reloadData()
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let request : NSFetchRequest<Item> = Item.fetchRequest()
         
-        let predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
-        
-        request.predicate = predicate
-        
-        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
-        
-        request.sortDescriptors = [sortDescriptor]
-        
-        
-        do {
-            try context.save()
-        } catch {
-            print("Error saving context \(error)")
-            
-        }
         tableView.reloadData()
     }
     
 }
+
+//Mark: - Search bar methods
+
+extension TodoListViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        let request : NSFetchRequest<Item> = Item.fetchRequest()
+        
+        request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+        
+        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        
+        loadItems(with: request)
+        
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 0 {
+            loadItems()
+            
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+            
+        }
+    }
+}
+
