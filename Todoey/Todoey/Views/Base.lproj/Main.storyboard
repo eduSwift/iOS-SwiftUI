@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Todoey-->
+        <!--Items-->
         <scene sceneID="FBZ-zC-ray">
             <objects>
                 <tableViewController id="6k7-p7-SFG" customClass="TodoListViewController" customModule="Todoey" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                     <toolbarItems>
                         <barButtonItem title="Item" id="MQY-oz-Roq"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Todoey" id="cer-e1-D0v">
+                    <navigationItem key="navigationItem" title="Items" id="cer-e1-D0v">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="il2-aR-LiN">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -54,7 +54,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txX-X9-Eq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112.2137404580153" y="-13.380281690140846"/>
+            <point key="canvasLocation" x="1915" y="-13"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MT5-8m-InN">
@@ -71,12 +71,51 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="6k7-p7-SFG" kind="relationship" relationship="rootViewController" id="8eI-qW-5jW"/>
+                        <segue destination="Qw5-hm-tc8" kind="relationship" relationship="rootViewController" id="aUs-Ky-bib"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXm-93-bMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="185.49618320610685" y="-13.380281690140846"/>
+        </scene>
+        <!--Todoey-->
+        <scene sceneID="FQp-jd-5rs">
+            <objects>
+                <tableViewController id="Qw5-hm-tc8" customClass="CategoryViewController" customModule="Todoey" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="z84-wC-jJf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="A6Y-TH-RXH">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A6Y-TH-RXH" id="abD-sg-DuX">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Qw5-hm-tc8" id="wcL-QS-zNl"/>
+                            <outlet property="delegate" destination="Qw5-hm-tc8" id="lva-ff-XlG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Todoey" id="qik-n2-GCG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SRa-S1-fxX">
+                            <color key="tintColor" systemColor="systemTealColor"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="Qw5-hm-tc8" id="zm8-Aw-j0p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="6k7-p7-SFG" kind="show" identifier="goToItems" id="m51-Bz-cH2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYK-g8-I1X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-13"/>
         </scene>
     </scenes>
     <resources>
@@ -85,6 +124,9 @@
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
