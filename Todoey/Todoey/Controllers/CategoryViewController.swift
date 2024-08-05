@@ -32,8 +32,8 @@ class CategoryViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
         
-        
         cell.textLabel?.text = categories[indexPath.row].name
+       
         
         return cell
     }
@@ -56,7 +56,13 @@ class CategoryViewController: UITableViewController {
         
         let request : NSFetchRequest<Category> = Category.fetchRequest()
         
-        categories = try context.fetch(request)
+        do{
+            categories = try context.fetch(request)
+        } catch {
+            print("Error loading categories \(error)")
+        }
+ 
+        tableView.reloadData()
         
     }
     
