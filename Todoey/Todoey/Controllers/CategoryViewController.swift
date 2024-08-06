@@ -12,7 +12,7 @@ import CoreData
 
 class CategoryViewController: UITableViewController {
     
-    var categories = [`Category`]()
+    var categories = [Category]()
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -52,9 +52,6 @@ class CategoryViewController: UITableViewController {
             destinationVC.selectedCategory = categories[indexPath.row]
         }
     }
-    
-}
-
     
     //MARK: - Data Manipulation Methods
     
@@ -111,7 +108,5 @@ class CategoryViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
     
-
     
-    
-  
+}

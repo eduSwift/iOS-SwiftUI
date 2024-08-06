@@ -101,6 +101,7 @@ class TodoListViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    // MARK: - Model Manipulation Methods
     
     func saveItems() {
         
@@ -115,6 +116,10 @@ class TodoListViewController: UITableViewController {
     }
     
     func loadItems(with request:NSFetchRequest<Item> = Item.fetchRequest()) {
+        
+        let predicate = NSPredicate(format: "parentCategory.name MATECHES %@", selectedCategory!.name!)
+        
+        request.predicate = predicate
         
         do {
             itemArray = try context.fetch(request)
