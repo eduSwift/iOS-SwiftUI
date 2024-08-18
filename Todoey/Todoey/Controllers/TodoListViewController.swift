@@ -16,8 +16,8 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadItems()
-    }
+        
+      }
     
     //MARK: - Tableview Datasource Methods
     
@@ -45,7 +45,7 @@ class TodoListViewController: UITableViewController {
         
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
         
-        saveItems()
+        
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -58,7 +58,7 @@ class TodoListViewController: UITableViewController {
         
         let alert = UIAlertController(title: "Add New Todoey Item", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Add item", style: .default) { (action) in
+        _ = UIAlertAction(title: "Add item", style: .default) { (action) in
             //What will happen once the user clicks the Add Item button on our UIAlert
             let newItem = Item()
             newItem.title = textField.text!
@@ -92,7 +92,6 @@ class TodoListViewController: UITableViewController {
             
             self.tableView.reloadData()
         }
-        
         
         func loadItems() {
             if let data = try? Data(contentsOf: dataFilePath!) {
