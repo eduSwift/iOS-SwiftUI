@@ -236,7 +236,22 @@ Allows users to create, read, update, and delete tasks Displays a list of tasks 
 
 ################################ ################################
 
+Noteloop
 
+
+Noteloop is a productivity app designed for taking and organizing notes in a simple and efficient manner.
+
+Features:
+
+Allows users to create, edit, and organize notes in various categories
+Includes search functionality to quickly find specific notes
+
+
+################################ ################################
+
+
+Supports text formatting and media attachments
+Demonstrates state management, data persistence, and UI customization in SwiftUI
 
 
 
