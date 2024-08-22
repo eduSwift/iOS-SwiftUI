@@ -249,9 +249,18 @@ Includes search functionality to quickly find specific notes
 
 ################################ ################################
 
+Vynil
 
-Supports text formatting and media attachments
-Demonstrates state management, data persistence, and UI customization in SwiftUI
+Vynil is a music app that allows users to discover and listen to their favorite vinyl records in a digital format.
+
+Features:
+
+Displays a catalog of vinyl records with album art and details
+Allows users to play and pause tracks, skip between songs, and adjust volume
+Supports creating and managing custom playlists
+
+
+################################ ################################
 
 
 
