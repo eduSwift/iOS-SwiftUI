@@ -249,15 +249,17 @@ Includes search functionality to quickly find specific notes
 
 ################################ ################################
 
-Vynil
+RecordRack
 
-Vynil is a music app that allows users to discover and listen to their favorite vinyl records in a digital format.
+RecordRack is a vinyl shop app concept designed in Figma, showcasing my design skills rather than coding abilities.
 
 Features:
 
-Displays a catalog of vinyl records with album art and details
-Allows users to play and pause tracks, skip between songs, and adjust volume
-Supports creating and managing custom playlists
+Displays a clean and modern interface for browsing and purchasing vinyl records
+Includes detailed product pages with album art, descriptions, and pricing
+Supports a seamless shopping experience with cart and checkout functionalities
+Demonstrates proficiency in UI/UX design, prototyping, and user flow creation in Figma
+
 
 
 ################################ ################################
