@@ -18,10 +18,10 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         
-        //loadItems()
-      }
+        loadItems()
+    }
     
     //MARK: - Tableview Datasource Methods
     
@@ -70,7 +70,9 @@ class TodoListViewController: UITableViewController {
             newItem.done = false
             self.itemArray.append(newItem)
             
+            self.saveItems()
             
+        }
             
             alert.addTextField { (alertTextField) in
                 alertTextField.placeholder = "Create new item"
@@ -80,13 +82,12 @@ class TodoListViewController: UITableViewController {
             
             alert.addAction(action)
             
-            self.present(alert, animated: true, completion: nil)
+            present(alert, animated: true, completion: nil)
         }
         
         //MARK: - Model Manipulation Methods
         
         func saveItems() {
-            
             
             do {
                 try context.save()
@@ -97,13 +98,13 @@ class TodoListViewController: UITableViewController {
             self.tableView.reloadData()
         }
         
-        //func loadItems() {
-            //if let data = try? Data(contentsOf: dataFilePath!) {
-                //let decoder = PropertyListDecoder()
-                //do {
-                    //itemArray = try decoder.decode([Item].self, from: data)
-               // } catch {
-                    
-                //}
+        func loadItems() {
+            let request : NSFetchRequest<Item> = Item.fetchRequest()
+            do {
+              itemArray = try context.fetch(request)
+            } catch {
+                print("Error fetching data from context \(error)")
             }
         }
+    }
+
