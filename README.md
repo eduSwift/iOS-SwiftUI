@@ -250,9 +250,9 @@ My first design project, highlighting my journey into UI/UX design
 
 ################################ ################################
 
-RecordsRack
+RecordRack
 
-RecordsRack is a vinyl shop app concept designed in Figma, showcasing my design skills rather than coding abilities.
+RecordRack is a vinyl shop app concept designed in Figma, showcasing my design skills rather than coding abilities.
 
 Features:
 
