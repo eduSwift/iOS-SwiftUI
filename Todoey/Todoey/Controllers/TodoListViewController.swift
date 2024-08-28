@@ -45,11 +45,13 @@ class TodoListViewController: UITableViewController {
     //MARK: - TableView Delegate Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //print(itemArray[indexPath.row])
+        
+        //itemArray.remove(at: indexPath.row)
+        //context.delete(itemArray[indexPath.row])
         
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
         
-        
+        saveItems()
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -106,5 +108,14 @@ class TodoListViewController: UITableViewController {
                 print("Error fetching data from context \(error)")
             }
         }
+    
+            
     }
+//MARK: - Search Bar Methods
 
+extension TodoListViewController: UISearchBarDelegate {
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        let request : NSFetchRequest<Item> = Item.fetchRequest()
+    }
+}
