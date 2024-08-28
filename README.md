@@ -261,9 +261,9 @@ Includes detailed product pages with album art, descriptions, and pricing
 Supports a seamless shopping experience with cart and checkout functionalities
 Demonstrates proficiency in UI/UX design, prototyping, and user flow creation in Figma
 
-
-
 ################################ ################################
+
+
 
 
 
