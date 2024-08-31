@@ -50,7 +50,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zQB-P9-YeC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698.47328244274809" y="-32.394366197183103"/>
+            <point key="canvasLocation" x="964" y="13"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M82-AU-j6h">
@@ -68,12 +68,44 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="pY8-Uo-jq4" kind="relationship" relationship="rootViewController" id="wTS-Vd-DGH"/>
+                        <segue destination="gb8-yQ-q0s" kind="relationship" relationship="rootViewController" id="Gdw-ss-buL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKN-7A-v15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-228.24427480916029" y="-32.394366197183103"/>
+            <point key="canvasLocation" x="-439" y="14"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="h74-TC-YHC">
+            <objects>
+                <tableViewController id="gb8-yQ-q0s" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Rbl-1m-dXh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hVn-gS-jao">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hVn-gS-jao" id="LV5-Zf-P0g">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gb8-yQ-q0s" id="X21-mf-ZOV"/>
+                            <outlet property="delegate" destination="gb8-yQ-q0s" id="F8f-Zm-7Qu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qSs-nd-x1G"/>
+                    <connections>
+                        <segue destination="pY8-Uo-jq4" kind="show" identifier="goToitems" id="TX0-lR-y3V"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kP6-u1-i0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="13"/>
         </scene>
     </scenes>
     <resources>
