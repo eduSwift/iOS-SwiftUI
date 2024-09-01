@@ -18,6 +18,8 @@ class CategoryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadCategories()
+        
     }
         
     // MARK: - TableView Datasource Methods
@@ -35,13 +37,40 @@ class CategoryViewController: UITableViewController {
         return cell
     }
     
+    // MARK: - Data Manipulations Methods
+    
+    func saveCategories(){
+        do {
+            try context.save()
+        } catch {
+            print("Error saving category \(error)")
+        }
+        
+        tableView.reloadData()
+    }
+    
+    func loadCategories() {
+        
+        let request : NSFetchRequest<Category> = Category.fetchRequest()
+        
+        do {
+            categories = try context.fetch(request)
+        } catch {
+            print("Error loading categories \(error)")
+        }
+        
+        tableView.reloadData()
+        
+    }
+    
+    
     // MARK: - Add New Categories
     
         @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
             
             var textField = UITextField()
             
-            let alert = UIAlertController(title: "Add New Category", message: "", preferredStyle: preferredStyle: .alert)
+            let alert = UIAlertController(title: "Add New Category", message: "", preferredStyle: .alert)
             
             let action = UIAlertAction(title: "Add", style: .default) { (action) in
                 
