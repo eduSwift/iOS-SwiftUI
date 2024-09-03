@@ -18,6 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        
+        do {
+            let realm = try Realm()
+            
+        }catch {
+            print("Erro inintalising new realm, \(error)")
+        }
+        
         return true
     }
 
