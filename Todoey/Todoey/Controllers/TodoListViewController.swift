@@ -11,8 +11,8 @@ import RealmSwift
 
 class TodoListViewController: UITableViewController {
     
-
-    var itemArray: Results<Item>?
+    
+    var todoItems: Results<Item>?
     let realm = try! Realm()
     
     var selectedCategory : Category? {
@@ -32,18 +32,22 @@ class TodoListViewController: UITableViewController {
     //MARK: - Tableview Datasource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemArray.count
+        return todoItems?.count ?? 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath)
         
-        let item = itemArray[indexPath.row]
-        
-        cell.textLabel?.text = item.title
-        
-        cell.accessoryType = item.done ? .checkmark : .none
+        if let item = todoItems?[indexPath.row] {
+            
+            cell.textLabel?.text = item.title
+            
+            cell.accessoryType = item.done ? .checkmark : .none
+            
+        } else {
+            cell.textLabel?.text = "No Items Added"
+        }
         
         return cell
     }
@@ -55,9 +59,9 @@ class TodoListViewController: UITableViewController {
         //itemArray.remove(at: indexPath.row)
         //context.delete(itemArray[indexPath.row])
         
-        itemArray[indexPath.row].done = !itemArray[indexPath.row].done
+        //todoItems[indexPath.row].done = !todoItems[indexPath.row].done
         
-        saveItems()
+        //saveItems()
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -73,13 +77,20 @@ class TodoListViewController: UITableViewController {
         let action = UIAlertAction(title: "Add item", style: .default) { (action) in
             //What will happen once the user clicks the Add Item button on our UIAlert
             
-            let newItem = Item(context: self.context)
-            newItem.title = textField.text!
-            newItem.done = false
-            newItem.parentCategory = self.selectedCategory
-            self.itemArray.append(newItem)
+            if let currentCategory = self.selectedCategory {
+                do {
+                    try self.realm.write {
+                        let newItem = Item()
+                        newItem.title = textField.text!
+                        currentCategory.items.append(newItem)
+                    }
+                } catch {
+                    print("Error saving new items, \(error)")
+                }
+                
+            }
             
-            self.saveItems()
+            self.tableView.reloadData()
             
         }
         
