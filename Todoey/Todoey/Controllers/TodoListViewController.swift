@@ -56,6 +56,17 @@ class TodoListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        if let item = todoItems?[indexPath.row] {
+            do {
+                try realm.write {
+                    item.done = !item.done
+            }
+           
+        } catch {
+            print("Error saving done status, \(error)")
+        }
+        
+            tableView.reloadData()
         //itemArray.remove(at: indexPath.row)
         //context.delete(itemArray[indexPath.row])
         
