@@ -60,108 +60,93 @@ class TodoListViewController: UITableViewController {
             do {
                 try realm.write {
                     item.done = !item.done
+                }
+                
+            } catch {
+                print("Error saving done status, \(error)")
             }
-           
-        } catch {
-            print("Error saving done status, \(error)")
+            
+            tableView.reloadData()
+            
+            tableView.deselectRow(at: indexPath, animated: true)
         }
         
-            tableView.reloadData()
-        //itemArray.remove(at: indexPath.row)
-        //context.delete(itemArray[indexPath.row])
+        //MARK: - Add New Items
         
-        //todoItems[indexPath.row].done = !todoItems[indexPath.row].done
-        
-        //saveItems()
-        
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-    //MARK: - Add New Items
-    
-    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
-        
-        var textField = UITextField()
-        
-        let alert = UIAlertController(title: "Add New Todoey Item", message: "", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "Add item", style: .default) { (action) in
-            //What will happen once the user clicks the Add Item button on our UIAlert
+        func addButtonPressed(_ sender: UIBarButtonItem) {
             
-            if let currentCategory = self.selectedCategory {
-                do {
-                    try self.realm.write {
-                        let newItem = Item()
-                        newItem.title = textField.text!
-                        currentCategory.items.append(newItem)
+            var textField = UITextField()
+            
+            let alert = UIAlertController(title: "Add New Todoey Item", message: "", preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "Add item", style: .default) { (action) in
+                //What will happen once the user clicks the Add Item button on our UIAlert
+                
+                if let currentCategory = self.selectedCategory {
+                    do {
+                        try self.realm.write {
+                            let newItem = Item()
+                            newItem.title = textField.text!
+                            newItem.dateCreated = Date()
+                            currentCategory.items.append(newItem)
+                        }
+                    } catch {
+                        print("Error saving new items, \(error)")
                     }
-                } catch {
-                    print("Error saving new items, \(error)")
+                    
                 }
+                
+                self.tableView.reloadData()
                 
             }
             
-            self.tableView.reloadData()
-            
-        }
-        
-        alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Create new item"
-            textField = alertTextField
-            
-        }
-        
-        alert.addAction(action)
-        
-        present(alert, animated: true, completion: nil)
-    }
-    
-    //MARK: - Model Manipulation Methods
-    
-    func saveItems() {
-        
-        do {
-            try context.save()
-        }   catch {
-            print("Error saving context \(error)")
-        }
-        
-        self.tableView.reloadData()
-    }
-    
-    func loadItems() {
-        
-        itemArray = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
-    
-
-        tableView.reloadData()
-        
-    }
-    
-    
-}
-//MARK: - Search Bar Methods
-
-extension TodoListViewController: UISearchBarDelegate {
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        let request : NSFetchRequest<Item> = Item.fetchRequest()
-        
-        request.predicate = NSPredicate(format: "title CONTAINS %@", searchBar.text!)
-        
-        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
-        
-       loadItems(with: request, predicate: predicate)
-    }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchBar.text?.count == 0 {
-            loadItems()
-            
-            DispatchQueue.main.async {
-                searchBar.resignFirstResponder()
+            alert.addTextField { (alertTextField) in
+                alertTextField.placeholder = "Create new item"
+                textField = alertTextField
+                
             }
-           
+            
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
+        }
+        
+
+        
+        //MARK: - Model Manipulation Methods
+        
+        func loadItems() {
+            
+            todoItems = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
+            
+            
+            tableView.reloadData()
+            
+        }
+        
+    }
+    
+    //MARK: - Search Bar Methods
+    
+extension TodoListViewController: UISearchBarDelegate {
+        
+        func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+            
+            todoItems = todoItems?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "dateCreated", ascending: true)
+            
+            tableView.reloadData()
+        }
+        
+        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            if searchBar.text?.count == 0 {
+                loadItems()
+                
+                DispatchQueue.main.async {
+                    searchBar.resignFirstResponder()
+                }
+                
+            }
         }
     }
-}
+    
+
