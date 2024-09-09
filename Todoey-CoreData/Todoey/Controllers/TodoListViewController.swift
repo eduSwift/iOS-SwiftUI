@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TodoListViewController: UITableViewController {
+class TodoListViewController: SwipeTableViewController {
     
     var itemArray = [Item]()
     
@@ -26,7 +26,7 @@ class TodoListViewController: UITableViewController {
         
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
 
-        
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     //MARK: - Tableview Datasource Methods
@@ -56,8 +56,8 @@ class TodoListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
 
-//        context.delete(itemArray[indexPath.row])
-//        itemArray.remove(at: indexPath.row)
+        context.delete(itemArray[indexPath.row])
+        itemArray.remove(at: indexPath.row)
         
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
 
@@ -134,8 +134,16 @@ class TodoListViewController: UITableViewController {
         tableView.reloadData()
         
     }
-    
-}
+
+     override func
+        updateModel(at indexPath: IndexPath) {
+             context.delete(itemArray[indexPath.row])
+             itemArray.remove(at: indexPath.row)
+         
+         saveItems()
+         }
+
+     }
 
 //MARK: - Search bar methods
 
