@@ -8,10 +8,15 @@
 
 import UIKit
 import CoreData
+import ChameleonFramework
 
 class TodoListViewController: SwipeTableViewController {
     
     var itemArray = [Item]()
+    
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     
     var selectedCategory : Category? {
         didSet{
@@ -24,9 +29,33 @@ class TodoListViewController: SwipeTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        tableView.separatorStyle = . none
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if let colourHex = selectedCategory?.colour {
+            
+            title = selectedCategory!.name
+            
+            guard let navBar = navigationController?.navigationBar else {fatalError("Navigation controller does not exist.")}
+            
+            if let navBarColour = UIColor(hexString: colourHex) {
+                
+                navBar.barTintColor = navBarColour
+                
+                navBar.tintColor = ContrastColorOf(navBarColour, returnFlat: true)
+                
+                navBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : ContrastColorOf(navBarColour, returnFlat: true)]
+                
+                searchBar.barTintColor = navBarColour
+                
+            }
+            
+            
+    }
+         
 
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
     //MARK: - Tableview Datasource Methods
@@ -37,16 +66,18 @@ class TodoListViewController: SwipeTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         let item = itemArray[indexPath.row]
-        
-        cell.textLabel?.text = item.title
-        
-        //Ternary operator ==>
-        // value = condition ? valueIfTrue : valueIfFalse
+            
+            cell.textLabel?.text = item.title
+            
+        if let colour = FlatGreen().darken(byPercentage: CGFloat(indexPath.row) / CGFloat(itemArray.count)) {
+                    cell.backgroundColor = colour
+                }
         
         cell.accessoryType = item.done ? .checkmark : .none
+                
         
         return cell
     }
@@ -66,6 +97,8 @@ class TodoListViewController: SwipeTableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
+    
+        
     
     //MARK: - Add New Items
     
@@ -135,8 +168,7 @@ class TodoListViewController: SwipeTableViewController {
         
     }
 
-     override func
-        updateModel(at indexPath: IndexPath) {
+     override func updateModel(at indexPath: IndexPath) {
              context.delete(itemArray[indexPath.row])
              itemArray.remove(at: indexPath.row)
          
