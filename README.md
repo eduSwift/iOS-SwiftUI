@@ -264,6 +264,7 @@ Demonstrates proficiency in UI/UX design, prototyping, and user flow creation in
 ################################ ################################
 
 InspoQuotes
+
 InspoQuotes is an inspirational quotes app that provides users with daily motivational quotes.
 
 Features:
@@ -276,4 +277,8 @@ Demonstrates state management, animations, and sharing functionality in SwiftUI
 
 ################################ ################################
 
+Resume
 
+Resume is an experimental app project, basically is a short version of my Resume created with SwiftUI.
+
+################################ ################################
