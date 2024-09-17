@@ -277,3 +277,9 @@ Demonstrates state management, animations, and sharing functionality in SwiftUI
 
 ################################ ################################
 
+Resume
+
+Resume is an experimental app project, basically is a short version of my Resume created with SwiftUI.
+
+################################ ################################
+
