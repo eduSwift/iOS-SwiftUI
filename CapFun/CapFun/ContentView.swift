@@ -20,28 +20,11 @@ struct ContentView: View {
                 .padding()
             
             HStack {
-                Text("ALL CAPS")
-                    .padding()
-                    .font(.largeTitle)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 15))
-                
-                Text("First Letter")
-                    .padding()
-                    .font(.largeTitle)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 15))
-                
-                Text("lowercase")
-                    .padding()
-                    .font(.largeTitle)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 15))
-                
+                CustomButtonView(title: "ALL CAPS", color: .red)
+                CustomButtonView(title: "First Letter", color: .green)
+                CustomButtonView(title: "lowercase", color: .blue)
             }
+            .padding()
         }
     }
 }

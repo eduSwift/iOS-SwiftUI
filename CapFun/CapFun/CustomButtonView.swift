@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct CustomButtonView: View {
+    
+    var title: String
+    var color: Color
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(title)
+            .font(.body)
+            .bold()
+            .padding(10)
+            .frame(maxWidth: .infinity)
+            .background(color)
+            .foregroundStyle(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 15))
+            
     }
 }
 
 #Preview {
-    CustomButtonView()
+    CustomButtonView(title: "Tap Me", color: .yellow)
 }
