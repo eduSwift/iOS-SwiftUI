@@ -15,14 +15,37 @@ struct ContentView: View {
         VStack {
             Text(userText)
                 .font(.largeTitle)
-                .foregroundStyle(.red)
             
-        TextField("Enter text here :)", text:  $userText)
-            .padding()
+            TextField("Enter your name", text: $userText)
+                .padding()
+            
+            HStack {
+                Text("ALL CAPS")
+                    .padding()
+                    .font(.largeTitle)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                
+                Text("First Letter")
+                    .padding()
+                    .font(.largeTitle)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                
+                Text("lowercase")
+                    .padding()
+                    .font(.largeTitle)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                
+            }
         }
     }
 }
-
+    
 #Preview {
     ContentView()
 }
