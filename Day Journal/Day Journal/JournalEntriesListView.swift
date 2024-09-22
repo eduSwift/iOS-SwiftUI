@@ -9,15 +9,22 @@ import SwiftUI
 
 struct JournalEntriesListView: View {
     
-    let journalEntries: [JournalEntry] = [JournalEntry(title: "US Election"), JournalEntry(title: "X vs Brazil")]
-    
+   
     var body: some View {
-        List(journalEntries) { listedJournalEntry in
-            Text(listedJournalEntry.title)
+        NavigationStack {
+            List(journalEntries) { listedJournalEntry in
+                NavigationLink(destination: Text(listedJournalEntry.text)) {
+                    Text(listedJournalEntry.title)
+                }
+            }
+            .navigationTitle("\(journalEntries.count) Journal Entries ")
         }
         
+        
     }
+    
 }
+
 
 #Preview {
     JournalEntriesListView()
