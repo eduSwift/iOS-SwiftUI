@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var userText = "Hi I'm Eduardo"
+    @State var userText = ""
     @State var capMode = 1
     
     var body: some View {
