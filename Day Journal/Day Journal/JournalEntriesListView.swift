@@ -8,22 +8,14 @@
 import SwiftUI
 
 struct JournalEntriesListView: View {
+    
+    let journalEntries: [JournalEntry] = [JournalEntry(title: "US Election"), JournalEntry(title: "X vs Brazil")]
+    
     var body: some View {
-        List {
-            Text("Hello")
-            Circle()
-                .frame(height:40)
-            Text("Hi")
-            Circle()
-                .frame(height:40)
-            Text("Hi")
-            Circle()
-                .frame(height:40)
-            Text("Hi")
-            Circle()
-                .frame(height:40)
-            Text("Hi")
+        List(journalEntries) { listedJournalEntry in
+            Text(listedJournalEntry.title)
         }
+        
     }
 }
 
