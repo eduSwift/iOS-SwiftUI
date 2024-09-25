@@ -263,19 +263,6 @@ Demonstrates proficiency in UI/UX design, prototyping, and user flow creation in
 
 ################################ ################################
 
-InspoQuotes
-
-InspoQuotes is an inspirational quotes app that provides users with daily motivational quotes.
-
-Features:
-
-Displays a new motivational quote each day
-Allows users to share quotes on social media or save them as favorites
-Provides an elegant and minimalistic UI with smooth transitions
-Demonstrates state management, animations, and sharing functionality in SwiftUI
-
-
-################################ ################################
 
 Resume
 
