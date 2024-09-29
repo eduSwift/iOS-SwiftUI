@@ -237,6 +237,21 @@ Allows users to create, read, update, and delete tasks Displays a list of tasks 
 ################################ ################################
 
 
+Noteloop
+
+Noteloop is a productivity app concept designed in Figma, showcasing my design skills.
+
+Features:
+
+Allows users to create, edit, and organize notes in various categories
+Includes search functionality to quickly find specific notes
+Demonstrates basic UI/UX design principles, prototyping, and user flow creation in Figma
+My first design project, highlighting my journey into UI/UX design
+
+
+################################ ################################
+
+
 RecordRack
 
 RecordRack is a vinyl shop app concept designed in Figma, showcasing my design skills rather than coding abilities.
