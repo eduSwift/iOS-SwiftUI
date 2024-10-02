@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DFB29C652CAD907500D5F557 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB29C642CAD907500D5F557 /* Item.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DFE90D8B2CA017D000A2F1C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DFB29C642CAD907500D5F557 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DFE90D7A2CA017CF00A2F1C4 /* Day Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE90D8A2CA017D000A2F1C4 /* Day JournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day JournalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE90D942CA017D000A2F1C4 /* Day JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day JournalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +80,7 @@
 		DFE90D712CA017CF00A2F1C4 = {
 			isa = PBXGroup;
 			children = (
+				DFB29C642CAD907500D5F557 /* Item.swift */,
 				DFE90D7C2CA017CF00A2F1C4 /* Day Journal */,
 				DFE90D8D2CA017D000A2F1C4 /* Day JournalTests */,
 				DFE90D972CA017D000A2F1C4 /* Day JournalUITests */,
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB29C652CAD907500D5F557 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
