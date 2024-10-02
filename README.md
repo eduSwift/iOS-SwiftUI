@@ -236,6 +236,7 @@ Allows users to create, read, update, and delete tasks Displays a list of tasks 
 
 ################################ ################################
 
+
 Noteloop
 
 Noteloop is a productivity app concept designed in Figma, showcasing my design skills.
@@ -249,6 +250,7 @@ My first design project, highlighting my journey into UI/UX design
 
 
 ################################ ################################
+
 
 RecordRack
 
@@ -279,6 +281,18 @@ Features:
 Allows users to input a phrase and select between three options: capitalize, lowercase, or all caps
 Provides a button to copy the transformed text to the clipboard
 Demonstrates basic text input handling, formatting options, and clipboard functionality in SwiftUI
+
+################################ ################################
+
+Day Journal
+
+Day Journal is a simple journaling app that allows users to write daily entries and track their thoughts over time.
+
+Features:
+
+Allows users to write, edit, and store daily journal entries
+Organizes entries by date and provides a simple timeline view
+Demonstrates data persistence, SwiftUI form handling, and a minimalistic interface for seamless journaling
 
 ################################ ################################
 
