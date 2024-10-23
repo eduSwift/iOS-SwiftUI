@@ -264,24 +264,6 @@ Demonstrates proficiency in UI/UX design, prototyping, and user flow creation in
 
 ################################ ################################
 
-Resume
-
-Resume is an experimental app project, basically is a short version of my Resume created with SwiftUI.
-
-################################ ################################
-
-CapFun
-
-CapFun is a simple text manipulation app built in SwiftUI, allowing users to transform phrases into different formats.
-
-Features:
-
-Allows users to input a phrase and select between three options: capitalize, lowercase, or all caps
-Provides a button to copy the transformed text to the clipboard
-Demonstrates basic text input handling, formatting options, and clipboard functionality in SwiftUI
-
-################################ ################################
-
 
 
 
