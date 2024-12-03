@@ -272,6 +272,7 @@ Resume is an experimental app project, basically is a short version of my Resume
 
 ################################ ################################
 
+
 CapFun
 
 CapFun is a simple text manipulation app built in SwiftUI, allowing users to transform phrases into different formats.
@@ -284,6 +285,7 @@ Demonstrates basic text input handling, formatting options, and clipboard functi
 
 ################################ ################################
 
+
 Day Journal
 
 Day Journal is a simple journaling app that allows users to write daily entries and track their thoughts over time.
@@ -293,6 +295,10 @@ Features:
 Allows users to write, edit, and store daily journal entries
 Organizes entries by date and provides a simple timeline view
 Demonstrates data persistence, SwiftUI form handling, and a minimalistic interface for seamless journaling
+Explore the projects to learn more about SwiftUI and to see practical implementations of various iOS development concepts!
 
-################################ ################################
+
+
+
+
 
