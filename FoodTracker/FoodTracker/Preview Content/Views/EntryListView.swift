@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EntryListView: View {
     
-    let entries: [Entry] = [
+    @State private var entries: [Entry] = [
         Entry(title: "Pizza", date: .now, calories: 0),
         Entry(title: "Coke Zero", date: .now, calories: 0),
         Entry(title: "Chips", date: .now, calories: 0)
@@ -23,28 +23,33 @@ struct EntryListView: View {
                 .scaledToFill()
                 .frame(width: 300, height: 300)
                 .ignoresSafeArea()
-
+            
             
             HStack {
                 
                 Image(systemName: "15.arrow.trianglehead.counterclockwise.ar")
                     .font(.title)
-            
+                
                 Text("FoodTracker")
                     .font(.largeTitle)
                     .bold()
+                    .backgroundStyle(.green)
             }
             .padding(.bottom, 5)
+            
             List {
                 ForEach(entries) { entry in
                     Text(entry.title)
-                   
                 }
-                    
+                
+                .onDelete { offset in
+                    entries.remove(atOffsets: offset)
+                }
+                }
             }
         }
     }
-}
+
 
 #Preview {
     EntryListView()
