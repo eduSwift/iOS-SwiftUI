@@ -18,10 +18,23 @@ struct EntryListView: View {
     
     var body: some View {
         VStack {
-            Text("FoodTracker")
-                .font(.largeTitle)
-                .bold()
+            Image("Calories")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 300, height: 300)
+                .ignoresSafeArea()
+
             
+            HStack {
+                
+                Image(systemName: "15.arrow.trianglehead.counterclockwise.ar")
+                    .font(.title)
+            
+                Text("FoodTracker")
+                    .font(.largeTitle)
+                    .bold()
+            }
+            .padding(.bottom, 5)
             List {
                 ForEach(entries) { entry in
                     Text(entry.title)
