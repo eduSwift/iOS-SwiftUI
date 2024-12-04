@@ -17,11 +17,21 @@ struct EntryListView: View {
     
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("FoodTracker")
+                .font(.largeTitle)
+                .bold()
+            
+            List {
+                ForEach(entries) { entry in
+                    Text(entry.title)
+                   
+                }
+                    
+            }
+        }
     }
 }
-
-
 
 #Preview {
     EntryListView()
