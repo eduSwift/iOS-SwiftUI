@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct JobsApp: App {
@@ -13,8 +14,8 @@ struct JobsApp: App {
         WindowGroup {
             ContentView()
             JobAddView()
-                .modelContainer(for: [Job.self
-                                     ])
+            JobsView()
+                .modelContainer(for: [Job.self])
         }
     }
 }

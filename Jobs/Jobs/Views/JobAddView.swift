@@ -25,7 +25,6 @@ struct JobAddView: View {
             
             Button("Save") {
                 saveJob()
-                print("save it")
             }
             .font(.subheadline)
             .padding()
