@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+    @AppStorage("username") 
+    private var username: String = "Username"
+    
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Welcome, \(username)!")
+            TextField("Username", text: $username)
         }
         .padding()
     }
