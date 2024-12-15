@@ -10,10 +10,6 @@ import Foundation
 struct Artist: Hashable, Identifiable {
     let id = UUID()
     let name: String
-    
-    static let all = [
-        Artist(name: "Radiohead"),
-        Artist(name: "White Lies"),
-        Artist(name: "Keane")
-    ]
+  
+
 }

@@ -13,4 +13,6 @@ struct Entry: Identifiable {
     var title: String
     var date: Date
     var calories: Int
+    var category: String
+    var description: String?
 }

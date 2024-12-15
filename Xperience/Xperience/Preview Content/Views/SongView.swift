@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SongView: View {
+/*struct SongView: View {
     @Binding var path: NavigationPath
     let song: Song
     
@@ -31,4 +31,4 @@ struct SongView: View {
 
 #Preview {
     MusicView()
-}
+}*/
