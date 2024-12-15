@@ -12,6 +12,9 @@ struct JobsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            JobAddView()
+                .modelContainer(for: [Job.self
+                                     ])
         }
     }
 }

@@ -11,13 +11,13 @@ import SwiftData
 @Model
 class Job {
     var id = UUID()
-    var title: String
-    var details: String
+    var jobTitle: String
+    var jobDetails: String
     var salary: Double
     
-    init(title: String, details: String, salary: Double) {
-        self.title = title
-        self.details = details
+    init(jobTitle: String, jobDetails: String, salary: Double) {
+        self.jobTitle = jobTitle
+        self.jobDetails = jobDetails
         self.salary = salary
     }
 }
