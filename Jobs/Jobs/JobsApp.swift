@@ -1,14 +1,14 @@
 //
-//  TraumJobApp.swift
-//  TraumJob
+//  JobsApp.swift
+//  Jobs
 //
-//  Created by Eduardo Rodrigues on 14/12/24.
+//  Created by Eduardo Rodrigues on 15/12/24.
 //
 
 import SwiftUI
 
 @main
-struct TraumJobApp: App {
+struct JobsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
