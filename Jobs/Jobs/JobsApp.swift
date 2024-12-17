@@ -15,6 +15,7 @@ struct JobsApp: App {
             ContentView()
             JobAddView()
             JobsView()
+            JobDetailView(job: Job(jobTitle: "", jobDetails: "", salary: 0.0, isFavorite: false, skills: []))
                 .modelContainer(for: [Job.self])
         }
     }

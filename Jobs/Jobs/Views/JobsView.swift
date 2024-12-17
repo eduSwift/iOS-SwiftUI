@@ -10,6 +10,8 @@ import SwiftData
 
 struct JobsView: View {
     @Query private var jobs: [Job]
+    @State private var showSheet = false
+    @State private var selectedJob: Job?
     
     
     var body: some View {
@@ -25,12 +27,22 @@ struct JobsView: View {
                             .font(.caption)
                     }
                     .padding(.vertical, 4)
+                    .onTapGesture {
+                        selectedJob = job
+                        showSheet = true
+                    }
                 }
+                
             }
             .navigationTitle("Jobs")
             .toolbar {
                 NavigationLink("Add") {
                     JobAddView()
+                }
+            }
+            .sheet(isPresented: $showSheet) {
+                if let selectedJob = selectedJob {
+                    JobDetailView(job: selectedJob)
                 }
             }
         }

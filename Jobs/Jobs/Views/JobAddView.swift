@@ -13,6 +13,8 @@ struct JobAddView: View {
     @State private var jobTitle: String = ""
     @State private var jobDetails: String = ""
     @State private var salary: Double = 0.0
+    @State private var isFavorite: Bool = false
+    @State private var skills: [Skills] = []
     
     
     var body: some View {
@@ -22,6 +24,8 @@ struct JobAddView: View {
             Text("Salary")
             Slider(value: $salary, in: 0...100)
                 Text(String(format: "%.2f €", salary))
+            
+            Toggle("Mark as favorite", isOn: $isFavorite)
             
             Button("Save") {
                 saveJob()
@@ -36,7 +40,7 @@ struct JobAddView: View {
     }
     
     private func saveJob() {
-        let newJob = Job(jobTitle: jobTitle, jobDetails: jobDetails, salary: salary)
+        let newJob = Job(jobTitle: jobTitle, jobDetails: jobDetails, salary: salary, isFavorite: isFavorite, skills: skills)
         context.insert(newJob)
     }
     
