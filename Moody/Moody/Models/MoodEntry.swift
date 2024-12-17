@@ -14,11 +14,11 @@ class MoodEntry: Identifiable {
     var id = UUID()
     var gratitudeText: String
     var date: Date
-    var mood: Mood
+    var mood: String
     
     
     init(mood: Mood, gratitudeText: String, date: Date = Date()) {
-        self.mood = mood
+        self.mood = mood.rawValue
         self.gratitudeText = gratitudeText
         self.date = date
     }
