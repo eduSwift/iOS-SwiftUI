@@ -14,11 +14,11 @@ class MoodEntry: Identifiable {
     var id = UUID()
     var gratitudeText: String
     var date: Date
-    var mood: String
+    var mood: Mood
     
     
     init(mood: Mood, gratitudeText: String, date: Date = Date()) {
-        self.mood = mood.rawValue
+        self.mood = mood
         self.gratitudeText = gratitudeText
         self.date = date
     }
@@ -29,7 +29,7 @@ enum Mood: String, CaseIterable {
     case sad = "Sad"
     case angry = "Angry"
     case tired = "Tired"
-    case love = "Love"
+    case loved = "Loved"
     case neutral = "Neutral"
     
     var emoji: String {
@@ -38,7 +38,7 @@ enum Mood: String, CaseIterable {
         case.sad: return "😔"
         case.angry: return "😡"
         case.tired: return "🥱"
-        case.love: return "😍"
+        case.loved: return "🥰"
         case.neutral: return "😐"
         }
     }
