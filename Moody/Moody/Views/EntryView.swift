@@ -5,7 +5,7 @@
 //  Created by Eduardo Rodrigues on 17/12/24.
 //
 
-import SwiftUI
+/*import SwiftUI
 import SwiftData
 
 struct EntryView: View {
@@ -66,4 +66,4 @@ struct MoodRow: View {
 #Preview {
     EntryView()
         .modelContainer(for: MoodEntry.self, inMemory: true)
-}
+}*/

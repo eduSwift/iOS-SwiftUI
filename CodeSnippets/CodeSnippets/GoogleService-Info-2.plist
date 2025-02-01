@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAOg8esyx3q6nQyH6cQBe3CtISD3QYxlLU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>166480305237</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.eduswift.CodeSnippets</string>
+	<key>PROJECT_ID</key>
+	<string>codesnippets-d6268</string>
+	<key>STORAGE_BUCKET</key>
+	<string>codesnippets-d6268.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:166480305237:ios:7facb8c040d82a8d6708dc</string>
+</dict>
+</plist>

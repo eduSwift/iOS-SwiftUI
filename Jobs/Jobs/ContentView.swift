@@ -14,11 +14,25 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack {
-            Text("Welcome, \(username)!")
-            TextField("Username", text: $username)
+        TabView {
+            JobsView()
+                .tabItem {
+                    Label("Jobs", systemImage: "suitcase")
+                }
+           
+            Settings()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+            
+            
+            
+            VStack {
+                Text("Welcome, \(username)!")
+                TextField("Username", text: $username)
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
