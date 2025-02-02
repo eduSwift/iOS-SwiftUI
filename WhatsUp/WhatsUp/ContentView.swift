@@ -1,12 +1,11 @@
 //
 //  ContentView.swift
-//  CodeSnippets
+//  WhatsUp
 //
-//  Created by Eduardo Rodrigues on 01.02.25.
+//  Created by Eduardo Rodrigues on 02.02.25.
 //
 
 import SwiftUI
-    @EnvironmentObject var userViewModel:  UserViewModel
 
 struct ContentView: View {
     var body: some View {

@@ -19,18 +19,20 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct CodeSnippetsApp: App {
-    init() {
-        FirebaseConfiguration.shared.setLoggerLevel(.min)
-        FirebaseApp.configure()
-    }
- 
   @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+  @StateObject private var userViewModel = UserViewModel()
 
   var body: some Scene {
     WindowGroup {
-      NavigationView {
-        ContentView()
+        if userViewModel.isUserLoggedIn {
+            ContentView()
+                .environmentObject(userViewModel)
+        } else {
+            LoginView()
+                .environmentObject(userViewModel)
+        }
+        
       }
     }
-  }
+
 }
