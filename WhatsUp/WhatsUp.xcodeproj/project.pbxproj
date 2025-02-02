@@ -6,20 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		DF6E32582D4FF928005C57E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF6E32572D4FF928005C57E7 /* GoogleService-Info.plist */; };
-		DF6E325B2D4FF9D6005C57E7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DF6E325A2D4FF9D6005C57E7 /* FirebaseAuth */; };
-		DF6E325D2D4FF9D6005C57E7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DF6E325C2D4FF9D6005C57E7 /* FirebaseFirestore */; };
-		DF6E325F2D4FF9D6005C57E7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DF6E325E2D4FF9D6005C57E7 /* FirebaseStorage */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		DF6E32462D4FF86A005C57E7 /* WhatsUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF6E32572D4FF928005C57E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF9615FA2D4FFBA2009B0502 /* WhatsUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DF6E32482D4FF86A005C57E7 /* WhatsUp */ = {
+		DF9615FC2D4FFBA2009B0502 /* WhatsUp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = WhatsUp;
 			sourceTree = "<group>";
@@ -27,32 +19,28 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DF6E32432D4FF86A005C57E7 /* Frameworks */ = {
+		DF9615F72D4FFBA2009B0502 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF6E325B2D4FF9D6005C57E7 /* FirebaseAuth in Frameworks */,
-				DF6E325D2D4FF9D6005C57E7 /* FirebaseFirestore in Frameworks */,
-				DF6E325F2D4FF9D6005C57E7 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF6E323D2D4FF86A005C57E7 = {
+		DF9615F12D4FFBA2009B0502 = {
 			isa = PBXGroup;
 			children = (
-				DF6E32572D4FF928005C57E7 /* GoogleService-Info.plist */,
-				DF6E32482D4FF86A005C57E7 /* WhatsUp */,
-				DF6E32472D4FF86A005C57E7 /* Products */,
+				DF9615FC2D4FFBA2009B0502 /* WhatsUp */,
+				DF9615FB2D4FFBA2009B0502 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DF6E32472D4FF86A005C57E7 /* Products */ = {
+		DF9615FB2D4FFBA2009B0502 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF6E32462D4FF86A005C57E7 /* WhatsUp.app */,
+				DF9615FA2D4FFBA2009B0502 /* WhatsUp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,81 +48,74 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF6E32452D4FF86A005C57E7 /* WhatsUp */ = {
+		DF9615F92D4FFBA2009B0502 /* WhatsUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF6E32542D4FF86B005C57E7 /* Build configuration list for PBXNativeTarget "WhatsUp" */;
+			buildConfigurationList = DF9616082D4FFBA3009B0502 /* Build configuration list for PBXNativeTarget "WhatsUp" */;
 			buildPhases = (
-				DF6E32422D4FF86A005C57E7 /* Sources */,
-				DF6E32432D4FF86A005C57E7 /* Frameworks */,
-				DF6E32442D4FF86A005C57E7 /* Resources */,
+				DF9615F62D4FFBA2009B0502 /* Sources */,
+				DF9615F72D4FFBA2009B0502 /* Frameworks */,
+				DF9615F82D4FFBA2009B0502 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DF6E32482D4FF86A005C57E7 /* WhatsUp */,
+				DF9615FC2D4FFBA2009B0502 /* WhatsUp */,
 			);
 			name = WhatsUp;
 			packageProductDependencies = (
-				DF6E325A2D4FF9D6005C57E7 /* FirebaseAuth */,
-				DF6E325C2D4FF9D6005C57E7 /* FirebaseFirestore */,
-				DF6E325E2D4FF9D6005C57E7 /* FirebaseStorage */,
 			);
 			productName = WhatsUp;
-			productReference = DF6E32462D4FF86A005C57E7 /* WhatsUp.app */;
+			productReference = DF9615FA2D4FFBA2009B0502 /* WhatsUp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DF6E323E2D4FF86A005C57E7 /* Project object */ = {
+		DF9615F22D4FFBA2009B0502 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					DF6E32452D4FF86A005C57E7 = {
+					DF9615F92D4FFBA2009B0502 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = DF6E32412D4FF86A005C57E7 /* Build configuration list for PBXProject "WhatsUp" */;
+			buildConfigurationList = DF9615F52D4FFBA2009B0502 /* Build configuration list for PBXProject "WhatsUp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = DF6E323D2D4FF86A005C57E7;
+			mainGroup = DF9615F12D4FFBA2009B0502;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				DF6E32592D4FF9D6005C57E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = DF6E32472D4FF86A005C57E7 /* Products */;
+			productRefGroup = DF9615FB2D4FFBA2009B0502 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF6E32452D4FF86A005C57E7 /* WhatsUp */,
+				DF9615F92D4FFBA2009B0502 /* WhatsUp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DF6E32442D4FF86A005C57E7 /* Resources */ = {
+		DF9615F82D4FFBA2009B0502 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF6E32582D4FF928005C57E7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DF6E32422D4FF86A005C57E7 /* Sources */ = {
+		DF9615F62D4FFBA2009B0502 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -144,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DF6E32522D4FF86B005C57E7 /* Debug */ = {
+		DF9616062D4FFBA3009B0502 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		DF6E32532D4FF86B005C57E7 /* Release */ = {
+		DF9616072D4FFBA3009B0502 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +244,7 @@
 			};
 			name = Release;
 		};
-		DF6E32552D4FF86B005C57E7 /* Debug */ = {
+		DF9616092D4FFBA3009B0502 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -277,8 +258,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,17 +267,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eduswift.WhatsUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DF6E32562D4FF86B005C57E7 /* Release */ = {
+		DF96160A2D4FFBA3009B0502 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -310,8 +287,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,67 +296,34 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eduswift.WhatsUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF6E32412D4FF86A005C57E7 /* Build configuration list for PBXProject "WhatsUp" */ = {
+		DF9615F52D4FFBA2009B0502 /* Build configuration list for PBXProject "WhatsUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF6E32522D4FF86B005C57E7 /* Debug */,
-				DF6E32532D4FF86B005C57E7 /* Release */,
+				DF9616062D4FFBA3009B0502 /* Debug */,
+				DF9616072D4FFBA3009B0502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF6E32542D4FF86B005C57E7 /* Build configuration list for PBXNativeTarget "WhatsUp" */ = {
+		DF9616082D4FFBA3009B0502 /* Build configuration list for PBXNativeTarget "WhatsUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF6E32552D4FF86B005C57E7 /* Debug */,
-				DF6E32562D4FF86B005C57E7 /* Release */,
+				DF9616092D4FFBA3009B0502 /* Debug */,
+				DF96160A2D4FFBA3009B0502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DF6E32592D4FF9D6005C57E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.7.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DF6E325A2D4FF9D6005C57E7 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DF6E32592D4FF9D6005C57E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		DF6E325C2D4FF9D6005C57E7 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DF6E32592D4FF9D6005C57E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		DF6E325E2D4FF9D6005C57E7 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DF6E32592D4FF9D6005C57E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = DF6E323E2D4FF86A005C57E7 /* Project object */;
+	rootObject = DF9615F22D4FFBA2009B0502 /* Project object */;
 }
