@@ -6,13 +6,24 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct SignUpView: View {
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var errorMessage: String = ""
     
     private var isFormValid: Bool {
         !email.isEmptyOrWhiteSpace && !password.isEmptyOrWhiteSpace
+    }
+    
+    private func signUp() async {
+        
+        do {
+            _ = try await Auth.auth().createUser(withEmail: email, password: password)
+        } catch {
+            errorMessage = error.localizedDescription
+        }
     }
     
     
@@ -31,11 +42,13 @@ struct SignUpView: View {
                     .textInputAutocapitalization(.never)
                     .padding()
                 
+                Text(errorMessage)
+                
                 
             }
             Button("Sign Up") {
                 Task {
-                    
+                    await signUp()
                 }
             }.disabled(!isFormValid)
                 
