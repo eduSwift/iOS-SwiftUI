@@ -28,35 +28,59 @@ struct SignUpView: View {
     
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Sign Up")
-                .font(.largeTitle)
-                .bold()
-                .padding()
-            Form {
-                TextField ("Email", text: $email)
-                    .textInputAutocapitalization(.never)
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [
+                    Color(.black),
+                    Color(.gray).opacity(0.3)
+                ]),
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
+            
+            VStack(spacing: 20) {
+                Text("Sign Up")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .bold()
                     .padding()
                 
-                SecureField ("Password", text: $password)
+                TextField ("Email", text: $email)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .foregroundColor(.white)
+                    .background(Color.white.opacity(0.1))
                     .textInputAutocapitalization(.never)
-                    .padding()
+                    .padding(.horizontal)
+                
+                SecureField ("Password", text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .background(Color.white.opacity(0.1))
+                    .textInputAutocapitalization(.never)
+                    .padding(.horizontal)
                 
                 Text(errorMessage)
                 
                 
             }
-            Button("Sign Up") {
-                Task {
-                    await signUp()
-                }
-            }.disabled(!isFormValid)
-                
-                .padding()
+            /*Button("Sign Up")
+             .frame(maxWidth: .infinity)
+             .padding()
+             .background(Color.black)
+             .foregroundColor(.white)
+             .cornerRadius(10)
+             
+             Task {
+             await signUp()
+             }
+             }.disabled(!isFormValid)
+             
+             .padding()*/
             
         }
         
     }
+    
 }
 
 #Preview {

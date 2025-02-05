@@ -16,12 +16,22 @@ struct LoginView: View {
         !email.isEmptyOrWhiteSpace && !password.isEmptyOrWhiteSpace
     }
     
+    
+    private func login() async {
+        
+        do {
+            _ = try await Auth.auth().signIn(withEmail: email, password: password)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
     var body: some View {
         ZStack {
             LinearGradient(
                 gradient: Gradient(colors: [
-                    Color("#FF83CD"),
-                    Color("#171120").opacity(0.3)
+                    Color(.black),
+                    Color(.gray).opacity(0.3)
                 ]),
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
@@ -31,7 +41,7 @@ struct LoginView: View {
             VStack(spacing: 20) {
                 Text("Login")
                     .font(.custom("SpaceGrotesk-Bold", size: 36))
-                    .foregroundColor(.black)
+                    .foregroundColor(.white).bold()
                 
                 VStack(spacing: 15) {
                     CustomTextField(icon: "envelope", placeholder: "Email", text: $email)
@@ -39,16 +49,18 @@ struct LoginView: View {
                 }
                 
                 Button(action: {
-                    
+                    Task {
+                        await login()
+                    }
                 }) {
                     Text("Login")
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color("#FF83CD"))
+                        .background(Color.black)
                         .foregroundColor(.white)
                         .font(.custom("SpaceGrotesk-Bold", size: 18))
                         .cornerRadius(12)
-                        .shadow(color: Color("#FF83CD").opacity(0.5), radius: 10)
+                
                 }
                 .padding(.horizontal)
             }
@@ -67,7 +79,7 @@ struct CustomTextField: View {
             Image(systemName: icon)
                 .foregroundColor(.white)
                 .frame(width: 40, height: 40)
-                .background(Color(hex: "#FF83CD").opacity(0.2))
+                .background(Color.black.opacity(0.2))
                 .cornerRadius(10)
             
             TextField(placeholder, text: $text)
@@ -91,7 +103,7 @@ struct CustomSecureField: View {
             Image(systemName: icon)
                 .foregroundColor(.white)
                 .frame(width: 40, height: 40)
-                .background(Color(hex: "#8BBAE9").opacity(0.2))
+                .background(Color.black.opacity(0.2))
                 .cornerRadius(10)
 
             SecureField(placeholder, text: $text)
