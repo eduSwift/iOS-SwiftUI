@@ -31,11 +31,11 @@ struct SignUpView: View {
         ZStack {
             LinearGradient(
                 gradient: Gradient(colors: [
-                    Color(.black),
-                    Color(.gray).opacity(0.3)
+                    Color(hex: "#0097B2"),
+                    Color(hex: "#7ed957")
                 ]),
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
+                startPoint: .leading,
+                endPoint: .trailing
             )
             .ignoresSafeArea()
             
