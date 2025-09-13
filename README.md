@@ -1,304 +1,271 @@
-My iOS SwiftUI App Projects
+# My iOS UIKit App Projects 📱
 
-Welcome to my GitHub repository showcasing a collection of my iOS SwiftUI app projects. Each project is designed to demonstrate different aspects of SwiftUI and iOS development.
+Welcome to my GitHub repository showcasing a collection of my iOS UIKit app projects. Each project demonstrates different aspects of UIKit and iOS development, including UI layout, user interaction, data handling, networking, and persistence.
 
-Projects
+These projects highlight my journey as an iOS developer and showcase practical implementations of core iOS concepts.
 
-I Am Rich
+⸻
 
-I Am Rich is a simple app that displays a diamond image and a label saying "I Am Rich." This app is inspired by the infamous "I Am Rich" app that was briefly available on the App Store.
+## Projects ##
 
-Features:
+### I Am Rich ###
 
-Displays a high-quality diamond image
-Shows a label with the text "I Am Rich"
-Demonstrates basic SwiftUI layout and image handling
-
-################################ ################################
-
-I Am Poor
-
-I Am Poor is a playful counterpoint to the "I Am Rich" app. It displays a coal image and a label saying "I Am Poor."
+A simple app that displays a diamond image and a label saying “I Am Rich.”
 
 Features:
+	•	Displays a high-quality diamond image
+	•	Shows a label with the text “I Am Rich”
+	•	Demonstrates basic UIKit layout and image handling
 
-Displays a high-quality coal image
-Shows a label with the text "I Am Poor"
-Demonstrates basic SwiftUI layout and image handling
+⸻
 
-################################ ################################
+###  I Am Poor ### 
 
-Dicee
-
-Dicee is a fun app that simulates rolling two dice. It generates random results when the user taps a button.
-
-Features:
-
-Displays two dice images
-Randomizes the dice faces when a button is pressed
-Demonstrates SwiftUI state management and random number generation
-
-################################ ################################
-
-
-Magic 8 Ball
-
-Magic 8 Ball is a whimsical app that answers the user's questions in a manner similar to the classic Magic 8 Ball toy. The user shakes the device or taps a button to receive a random answer.
+A playful counterpoint to “I Am Rich,” showing a coal image and a label “I Am Poor.”
 
 Features:
+	•	Displays a high-quality coal image
+	•	Shows a label with the text “I Am Poor”
+	•	Demonstrates basic UIKit layout and image handling
 
-Displays a Magic 8 Ball image
-Provides random answers to the user's questions
-Demonstrates SwiftUI state management and animation
+⸻
 
-################################ ################################
+### Dicee ### 
 
-Xylophone
-
-Xylophone is an interactive app that allows users to play musical notes by tapping on different colored bars, simulating a xylophone.
-
-Features:
-
-Displays a colorful xylophone interface
-Plays different musical notes when the bars are tapped
-Demonstrates audio playback and touch interactions in SwiftUI
-
-################################ ################################
-
-Egg Timer
-
-Egg Timer is a practical app that helps you boil eggs to your preferred level of doneness. Set the timer based on the desired doneness, and the app will alert you when your eggs are ready.
+Simulates rolling two dice. Generates random results when the user taps a button.
 
 Features:
+	•	Displays two dice images
+	•	Randomizes dice faces when a button is pressed
+	•	Demonstrates UIKit state management and random number generation
 
-Simple and intuitive interface for setting the timer
-Different timer presets for soft, medium, and hard-boiled eggs
-Alerts the user when the timer is up
-Demonstrates the use of SwiftUI timers and notifications
+⸻
 
-################################ ################################
+### Magic 8 Ball ### 
 
-Quizzler
-
-Quizzler is an engaging quiz app that tests the user's knowledge on various topics.
+Answers the user’s questions like the classic Magic 8 Ball toy. Shake or tap for a random answer.
 
 Features:
+	•	Displays a Magic 8 Ball image
+	•	Provides random answers
+	•	Demonstrates UIKit animations and state management
 
-Displays a series of multiple-choice questions
-Tracks the user's score based on correct answers
+⸻
 
-################################ ################################
+### Xylophone ### 
 
-Destini
-
-Destini is an interactive storytelling app that allows users to choose their own adventure through a series of branching narrative choices.
-
-Features:
-
-Displays a story with multiple paths
-Allows users to make choices that affect the story's outcome
-Tracks the progress and branches of the story
-Demonstrates SwiftUI state management and complex navigation
-
-################################ ################################
-
-Tipsy
-
-
-Tipsy is a tip calculator app that helps users calculate the tip amount and split the bill among multiple people.
+Interactive app allowing users to play musical notes by tapping colored bars.
 
 Features:
+	•	Displays a colorful xylophone interface
+	•	Plays musical notes when bars are tapped
+	•	Demonstrates audio playback and touch interactions in UIKit
 
-Simple and intuitive interface for inputting bill amount, tip percentage, and number of people
-Calculates and displays the tip amount per person and the total amount per person
-Demonstrates form handling, data validation, and financial calculations in SwiftUI
+⸻
 
+### Egg Timer ### 
 
-################################ ################################
-
-
-BMI Calculator
-
-BMI Calculator is a health-focused app that helps users calculate their Body Mass Index (BMI) based on their height and weight.
+Helps boil eggs to preferred doneness. Set a timer and get alerts.
 
 Features:
+	•	Simple interface for timer presets (soft, medium, hard)
+	•	Alerts user when timer is up
+	•	Demonstrates UIKit timers and notifications
 
-Simple and intuitive interface for inputting height and weight
-Calculates and displays the user's BMI
-Provides information on BMI categories (e.g., underweight, normal, overweight, obese)
-Demonstrates form handling, data validation, and health-related calculations in SwiftUI
+⸻
 
+### Quizzler ### 
 
-################################ ################################
-
-I Am Rich 2.0
-
-I Am Rich 2.0 is an upgraded version of the classic "I Am Rich" app with enhanced features.
+A quiz app that tests the user’s knowledge on various topics.
 
 Features:
+	•	Displays multiple-choice questions
+	•	Tracks the user’s score
+	•	Demonstrates UIKit forms and data handling
 
-Displays a high-quality diamond image
-Shows a label with the text "I Am Rich"
-Includes additional luxury items and quotes
-Demonstrates advanced SwiftUI layout, animations, and image handling
+⸻
 
-################################ ################################
+### Destini ### 
+
+Interactive storytelling app allowing users to choose their own adventure.
+
+Features:
+	•	Branching stories with user choices
+	•	Tracks progress and story outcomes
+	•	Demonstrates UIKit navigation and state management
+
+⸻
+
+### Tipsy ### 
+
+Tip calculator app to calculate tips and split bills.
+
+Features:
+	•	Input for bill amount, tip percentage, and number of people
+	•	Displays tip and total per person
+	•	Demonstrates form handling and calculations in UIKit
+
+⸻
+
+### BMI Calculator ### 
+
+Calculates Body Mass Index based on height and weight.
+
+Features:
+	•	Input for height and weight
+	•	Displays BMI and categories (underweight, normal, overweight, obese)
+	•	Demonstrates form handling and calculations in UIKit
+
+⸻
+
+###  I Am Rich 2.0 ### 
+
+An upgraded version of the classic “I Am Rich” app with enhanced features.
+
+Features:
+	•	Displays a high-quality diamond image
+	•	Shows a label with the text “I Am Rich”
+	•	Includes additional luxury items and quotes
+	•	Demonstrates advanced UIKit layout, animations, and image handling
+
+⸻
 
 Eduardo Card
 
-Eduardo Card is a digital business card app that allows users to create and share their contact information in a modern, interactive format.
+A digital business card app to create and share contact information interactively.
 
 Features:
+	•	Displays a profile image, name, job title, and contact information
+	•	Includes tappable links to social media
+	•	Customizable design and layout
+	•	Demonstrates advanced UIKit layout and interactivity
 
-Displays a digital business card with a profile image, name, job title, and contact information
-Includes tappable links to social media profiles and other contact methods
-Customizable design and layout options
-Demonstrates advanced SwiftUI layout, interactivity, and customization
-
-################################ ################################
+⸻
 
 Clima
 
-Clima is a weather app that provides current weather information for any city.
+Weather app providing current weather information for any city.
 
 Features:
+	•	Fetches real-time weather data from an API
+	•	Displays current temperature, weather conditions, and city name
+	•	Allows city search
+	•	Demonstrates network requests, JSON parsing, and dynamic UI updates in UIKit
 
-Fetches real-time weather data from an API
-Displays current temperature, weather conditions, and city name
-Allows users to search for weather information by city
-Demonstrates network requests, JSON parsing, and dynamic UI updates in SwiftUI
-
-################################ ################################
+⸻
 
 ByteCoin
 
-ByteCoin is a cryptocurrency price tracker that allows users to monitor the current exchange rate of Bitcoin and other cryptocurrencies.
+Cryptocurrency tracker to monitor Bitcoin and other cryptocurrencies.
 
 Features:
+	•	Fetches real-time cryptocurrency data
+	•	Displays exchange rates and conversion options
+	•	Demonstrates network requests and dynamic UI updates in UIKit
 
-Fetches real-time cryptocurrency data from an API
-Displays current exchange rates for Bitcoin and other major cryptocurrencies
-Allows users to select different fiat currencies for conversion
-Demonstrates network requests, JSON parsing, and dynamic UI updates in SwiftUI
-
-
-################################ ################################
-
+⸻
 
 Flash Chat
 
-Flash Chat is a real-time chat application that allows users to send and receive messages instantly.
+Real-time chat application using Firebase.
 
 Features:
+	•	User authentication with Firebase
+	•	Real-time messaging with Firestore
+	•	Displays chat interface with message bubbles
+	•	Demonstrates real-time database integration and UIKit UI updates
 
-Implements user authentication (sign up and login) using Firebase
-Real-time message sending and receiving using Firestore
-Displays a chat interface with message bubbles
-Demonstrates user authentication, real-time database integration, and dynamic UI updates in SwiftUI
-
-
-################################ ################################
-
+⸻
 
 H4X0R News
 
-H4X0R News is a news reader app that fetches and displays the latest news articles from the Hacker News API.
+News reader app fetching the latest articles from Hacker News API.
 
 Features:
+	•	Fetches real-time news data
+	•	Displays news titles and links
+	•	Opens articles in a web view
+	•	Demonstrates network requests and UIKit dynamic UI
 
-Fetches real-time news data from the Hacker News API
-Displays a list of news articles with titles and URLs
-Allows users to tap on a news article to open the URL in a web view
-Demonstrates network requests, JSON parsing, and dynamic UI updates in SwiftUI
-
-################################ ################################
+⸻
 
 My Business Card
 
-My Business Card is a simple app that displays a digital business card with contact information and social media links.
+Displays a simple digital business card with contact information and social media links.
 
 Features:
+	•	Profile image, name, job title, and contact info
+	•	Tappable social media links
+	•	Demonstrates basic UIKit layout and interactivity
 
-Displays a digital business card with a profile image, name, job title, and contact information
-Includes tappable links to social media profiles
-Demonstrates basic SwiftUI layout and interactivity
-
-################################ ################################
+⸻
 
 Todoey
 
-Todoey is a task management app that helps users keep track of their to-do lists.
+Task management app to track to-do lists.
 
 Features:
+	•	Create, read, update, delete tasks (CRUD)
+	•	Displays tasks with checkboxes
+	•	Stores tasks persistently
+	•	Demonstrates data persistence and UIKit state management
 
-Allows users to create, read, update, and delete tasks Displays a list of tasks with checkboxes to mark them as completed Stores tasks persistently using Core Data or a similar persistence framework Demonstrates CRUD operations, state management, and persistent storage in SwiftUI
-
-
-################################ ################################
-
+⸻
 
 Noteloop
 
-Noteloop is a productivity app concept designed in Figma, showcasing my design skills.
+Productivity app concept designed in Figma (UI/UX).
 
 Features:
+	•	Create, edit, organize notes in categories
+	•	Search functionality for quick access
+	•	Demonstrates UI/UX design, prototyping, and user flows
 
-Allows users to create, edit, and organize notes in various categories
-Includes search functionality to quickly find specific notes
-Demonstrates basic UI/UX design principles, prototyping, and user flow creation in Figma
-My first design project, highlighting my journey into UI/UX design
-
-
-################################ ################################
-
+⸻
 
 RecordRack
 
-RecordRack is a vinyl shop app concept designed in Figma, showcasing my design skills rather than coding abilities.
+Vinyl shop concept app designed in Figma.
 
 Features:
+	•	Browse and purchase vinyl records
+	•	Detailed product pages with album art and pricing
+	•	Demonstrates UI/UX design and prototyping skills
 
-Displays a clean and modern interface for browsing and purchasing vinyl records
-Includes detailed product pages with album art, descriptions, and pricing
-Supports a seamless shopping experience with cart and checkout functionalities
-Demonstrates proficiency in UI/UX design, prototyping, and user flow creation in Figma
-
-################################ ################################
-
+⸻
 
 Resume
 
-Resume is an experimental app project, basically is a short version of my Resume created with SwiftUI.
+Experimental app project; a short version of my Resume created with UIKit.
 
-################################ ################################
-
+⸻
 
 CapFun
 
-CapFun is a simple text manipulation app built in SwiftUI, allowing users to transform phrases into different formats.
+Text manipulation app.
 
 Features:
+	•	Transform phrases to capitalize, lowercase, or all caps
+	•	Copy transformed text to clipboard
+	•	Demonstrates text input handling and UIKit formatting
 
-Allows users to input a phrase and select between three options: capitalize, lowercase, or all caps
-Provides a button to copy the transformed text to the clipboard
-Demonstrates basic text input handling, formatting options, and clipboard functionality in SwiftUI
-
-################################ ################################
-
+⸻
 
 Day Journal
 
-Day Journal is a simple journaling app that allows users to write daily entries and track their thoughts over time.
+Simple journaling app to write and track daily entries.
 
 Features:
+	•	Write, edit, store daily journal entries
+	•	Organized by date with a timeline view
+	•	Demonstrates data persistence and UIKit form handling
 
-Allows users to write, edit, and store daily journal entries
-Organizes entries by date and provides a simple timeline view
-Demonstrates data persistence, SwiftUI form handling, and a minimalistic interface for seamless journaling
-Explore the projects to learn more about SwiftUI and to see practical implementations of various iOS development concepts!
+⸻
 
-
-
-
+## ⚙️ Tech Stack ##
+	•	UIKit for building interfaces
+	•	Core Data or local storage for persistence
+	•	Firebase for authentication and storage (where applicable)
+	•	MVC architecture for project structure
 
 
